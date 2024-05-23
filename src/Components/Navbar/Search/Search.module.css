@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+}
+.icon{
+    margin-left: 5px;
+    width: 20px;
+}
+.button{
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+}
+.input{
+    /* display: none; */
+    padding-left: 4px;
+    font-size: 15px;
+    width: 200px;
+    margin-right: 5px;
+    border: 1px solid rgb(235, 233, 233);
+    outline: none;
+    border-radius: 3px;
+}
