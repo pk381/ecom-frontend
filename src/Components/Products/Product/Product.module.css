@@ -53,6 +53,11 @@
     border-bottom: 2px solid transparent;
 }
 
+.name a{
+    color:  black;
+    text-decoration: none;
+}
+
 .catogery{
     font-size: 12px;
     font-weight: 500;

@@ -1,7 +1,11 @@
 import styles from "./ProductPage.module.css";
 import AboutProduct from "./AboutProduct/AboutProduct";
 
+import { useParams } from "react-router-dom";
+
 function ProductPage() {
+
+  const {productId} = useParams();
   return (
     <div className={styles.container}>
       <div className={styles.subcontainer}>
@@ -18,7 +22,7 @@ function ProductPage() {
         </div>
 
         <div className={styles.details}>
-          <h3 className={styles.title}>ASAP BAG</h3>
+          <h3 className={styles.title}>{productId}</h3>
           <p className={styles.category}>BAGS</p>
           <div className={styles.ratting}>5</div>
 

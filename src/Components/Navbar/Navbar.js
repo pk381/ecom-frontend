@@ -1,28 +1,20 @@
 import styles from "./Navbar.module.css";
 import Search from "./Search/Search";
 
+import { Link } from "react-router-dom";
+
 function Navbar(props) {
   return (
     <div className={styles.container}>
       <div className={styles.menulogo}>
         <div className={styles.logo}>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            Solution Hub
-          </a>
+          <Link to="/">Solution Hub</Link>
         </div>
         <div className={styles.menu}>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            HOME
-          </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            SERVICES
-          </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            CONTACT US
-          </a>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
-            PRIVACY POLICIES
-          </a>
+          <Link to="/">HOME</Link>
+          <Link to="/services">SERVICES</Link>
+          <Link to="/contact-us">CONTACT US</Link>
+          <Link to="/Privacy-policies">PRIVACY POLICIES</Link>
         </div>
       </div>
       <div className={styles.right}>

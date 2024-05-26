@@ -2,6 +2,7 @@ import styles from "./Search.module.css";
 import icon from "./search-bg.png";
 
 import { useState } from "react";
+import axios from "axios";
 
 function Search() {
 
@@ -10,6 +11,13 @@ function Search() {
     const clickHandler = (e)=>{
         e.preventDefault();
         // add function here
+        console.log("clicked search");
+
+        axios.get('http://localhost:4000/user?id=abcd&email=email').then(res =>{
+          console("result is neree");
+        }).catch(err=>{
+          console.log(err);
+        })
     }
 
   return (

@@ -9,9 +9,6 @@ function Products(){
             <ProductBucket></ProductBucket>
             <ProductBucket></ProductBucket>
             <ProductBucket></ProductBucket>
-            <ProductBucket></ProductBucket>
-            <ProductBucket></ProductBucket>
-            <ProductBucket></ProductBucket>
         </div>
     );
 }

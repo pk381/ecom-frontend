@@ -1,4 +1,5 @@
 import styles from "./Product.module.css";
+import { Link } from "react-router-dom";
 
 function Product(props) {
   return (
@@ -9,7 +10,9 @@ function Product(props) {
       <div className={styles.subcontainer}>
         <div className={styles.info}>
           <div className={styles.text}>
-            <div className={styles.name}>POCKET WATCH</div>
+            <div className={styles.name}>
+              <Link to="product-page/:productId"> POCKET WATCH</Link>
+            </div>
             <div className={styles.catogery}>ACCESSORIES</div>
           </div>
 

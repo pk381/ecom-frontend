@@ -21,10 +21,6 @@
 .item:active{
     color: rgb(88, 88, 88);
     border-bottom: 2px solid rgb(70, 69, 69);
-
-}
-.item:hover{
-    color: rgb(88, 88, 88);
 }
 
 .line{
