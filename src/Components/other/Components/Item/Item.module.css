@@ -1,0 +1,63 @@
+.item{
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+    /* background-color: rgba(227, 231, 231, 0.5); */
+    box-shadow: 0 4px 8px 0 rgba(227, 231, 231, 0.2), 0 6px 20px 0 rgba(227, 231, 231, 0.19);
+    /* padding: 10px; */
+}
+
+.img{
+    flex: 2;
+    width: 40%;
+    height: 100%;
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info{
+    flex: 3;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(158, 159, 159);
+}
+
+.stars {
+    font-size: 24px; /* Set the size of the stars */
+  }
+  
+  .stars::before {
+    content: '★★★★★'; /* Unicode character for filled star */
+    letter-spacing: 3px; /* Spacing between stars */
+    color: gold; /* Color of the filled stars */
+  }
+  
+  .stars[data-rating="1"]::before {
+    content: '★☆☆☆☆'; /* Unicode character for one filled star and four empty stars */
+  }
+  
+  .stars[data-rating="2"]::before {
+    content: '★★☆☆☆'; /* Unicode character for two filled stars and three empty stars */
+  }
+  
+  .stars[data-rating="3"]::before {
+    content: '★★★☆☆'; /* Unicode character for three filled stars and two empty stars */
+  }
+  
+  .stars[data-rating="4"]::before {
+    content: '★★★★☆'; /* Unicode character for four filled stars and one empty star */
+  }
+  
+  .stars[data-rating="5"]::before {
+    content: '★★★★★'; /* Unicode character for five filled stars */
+  }
+  
