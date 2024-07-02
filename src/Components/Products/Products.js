@@ -6,9 +6,7 @@ function Products(){
 
     return(
         <div className={styles.container}>
-            <ProductBucket></ProductBucket>
-            <ProductBucket></ProductBucket>
-            <ProductBucket></ProductBucket>
+            <ProductBucket type={'blush'}></ProductBucket>
         </div>
     );
 }

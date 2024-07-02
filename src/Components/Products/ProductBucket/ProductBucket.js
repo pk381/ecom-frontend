@@ -1,10 +1,33 @@
-import React, { useRef} from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "./ProductBucket.module.css";
 import Product from "../Product/Product";
+import url from '../../../axios'
 
-function ProductBucket() {
+function ProductBucket(props) {
   const boxRef = useRef(null);
   const productRef = useRef(null);
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    url.get('/products.json', {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      params: {
+        // product_category: 'gel',
+        product_type: 'blush'
+        // https://makeup-api.herokuapp.com/
+      }
+    })
+    .then(res => {
+      console.log(res);
+      setProducts(res.data);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  }, []);
 
   const btnpressprev = () => {
     if (boxRef.current && productRef.current) {
@@ -34,15 +57,10 @@ function ProductBucket() {
       </div>
       <div className={styles.products} ref={boxRef}>
         <div ref={productRef}>
-          <Product child={1}></Product>
+          <Product product={products[0]}></Product>
         </div>
-        <Product child={2}></Product>
-        <Product child={3}></Product>
-        <Product child={4}></Product>
-        <Product child={5}></Product>
-        <Product child={6}></Product>
-        <Product child={7}></Product>
-        <Product child={8}></Product>
+        <Product product={products[1]}></Product>
+        <Product product={products[2]}></Product>
       </div>
     </div>
   );
