@@ -1,9 +1,10 @@
-import one from './Assets/1.png';
-import two from './Assets/2.png';
-import three from './Assets/3.png';
-
 import Carousel from './Carousel/Carousel'
 import Products from './Products/Products';
+
+import one from './Assets/1.jpg';
+import two from './Assets/2.jpg';
+import three from './Assets/3.jpg';
+
 function Home(){
     return(
 

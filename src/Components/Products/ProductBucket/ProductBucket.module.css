@@ -23,6 +23,7 @@
 .description h4{
     font-size: 25px;
     font-weight: 500;
+    text-transform: uppercase; 
 }
 
 .description p{
@@ -31,6 +32,7 @@
     font-weight: 300;
     font-stretch: semi-condensed;
     font-stretch: ultra-condensed;
+    text-transform: uppercase; 
 }
 
 .products{
