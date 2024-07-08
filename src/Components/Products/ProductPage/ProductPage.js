@@ -46,7 +46,7 @@ function ProductPage() {
               <div className={styles.quantity}>{quantity}</div>
               <button className={styles.button} onClick={()=> setQuantity(quantity+1)}>+</button>
             </div>
-            <button className={styles.addToCart}>ADD TO CART</button>
+            <button className={styles.addToCart} >ADD TO CART</button>
           </div>
           <button className={styles.addToWish}> ADD TO WISH LIST</button>
         </div>

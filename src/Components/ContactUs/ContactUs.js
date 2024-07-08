@@ -15,7 +15,11 @@ function ContactUs() {
                 </div>
                 <div className={styles.inputs}>
                     <lable for='message'>Message:</lable>
-                    <textarea type="text"/>
+                    <textarea type="text" />
+                </div>
+
+                <div className={styles.inputs}>
+                    <button type="submit" className={styles.button} value={"submit"}>Submit</button>
                 </div>
 
             </form>
