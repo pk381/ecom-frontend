@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 5px 5px;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.inputs input, .inputs textarea{
+    height: 30px;
+    outline: none;
+    min-width: 100%;
+    border: 1px solid black;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.inputs textarea{
+    min-height: 200px;
+}

@@ -1,9 +1,8 @@
 .container{
     top: 0%;
-    /* position: absolute; */
     max-width: 100%;
     display: flex;
-    background-color: white;
+    background-color: rgb(175, 4, 4);
     background: transparent;
     justify-content: space-between;
     align-items: center;
@@ -12,23 +11,51 @@
     border-bottom: 1.5px solid rgb(235, 235, 235);
 }
 .menu{
-    margin: auto 10px;
+    margin: 2px 10px;
+    display: flex;
+}
+
+.submenu{
+    /* visibility: hidden; */
+    position: absolute;
+    top: 54px;
+    left: 299px;
+    z-index: 10;
+    padding: 0px 20px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-right: 31px;
+    background-color: rgb(247, 247, 247);
+
+}
+
+.submenu li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    /* border: 1px solid black; */
 }
 .menulogo{
     display: flex;
 }
-.menu a{
+.links:hover{
+    background-color: rgb(247, 247, 247);
+    /* color: rgb(235, 25, 25); */
+}
+.menu a, .subMenuContainer{
     text-decoration: none;
-    margin: 2px 15px;
+    margin: 2px 0px;
     color: black;
     font-size: 16px;
+    padding: 5px 15px;
     font-family: roboto condensed, sans-serif;
+    cursor: pointer;
 }
 .logo{
     height: 100%;
     display: flex;
     align-items: center;
-    /* background-color: aquamarine; */
     margin: auto 0px;
     padding: auto 0px; 
 }

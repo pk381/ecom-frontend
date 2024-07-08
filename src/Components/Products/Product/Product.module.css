@@ -5,6 +5,7 @@
     /* border: 1px solid black; */
     margin-bottom: 40px;
     margin-right: 33px;
+    /* border: 1px solid black; */
 }
 
 .tag{
@@ -26,7 +27,13 @@
     height: 330px;
     width: 260px;
     cursor: pointer;
-    border: 1px solid black;
+    /* border: 1px solid rgb(218, 218, 218); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image img{
@@ -55,13 +62,20 @@
     font-weight: 500;
     width: fit-content;
     font-size: 18px;
+    max-height: 20px;
+    /* background-color: aqua; */
     cursor: pointer;
     border-bottom: 2px solid transparent;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .name a{
     color:  black;
     text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .catogery{

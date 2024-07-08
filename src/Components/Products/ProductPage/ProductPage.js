@@ -2,11 +2,15 @@ import styles from "./ProductPage.module.css";
 import AboutProduct from "./AboutProduct/AboutProduct";
 
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 function ProductPage() {
+
   const location = useLocation();
   const product = location.state?.props;
-  console.log(product)
+
+  const [quantity, setQuantity] = useState(1);
+
   return (
     <div className={styles.container}>
       <div className={styles.subcontainer}>
@@ -38,9 +42,9 @@ function ProductPage() {
           </div>
           <div className={styles.actions}>
             <div className={styles.quantityBox}>
-              <button className={styles.button}>-</button>
-              <div className={styles.quantity}>1</div>
-              <button className={styles.button}>+</button>
+              <button className={styles.button} onClick={()=> quantity === 1? setQuantity(1): setQuantity(quantity-1)}>-</button>
+              <div className={styles.quantity}>{quantity}</div>
+              <button className={styles.button} onClick={()=> setQuantity(quantity+1)}>+</button>
             </div>
             <button className={styles.addToCart}>ADD TO CART</button>
           </div>

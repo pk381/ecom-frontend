@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import Home from './Components/Home';
 import ProductPage from './Components/Products/ProductPage/ProductPage';
+import ContactUs from './Components/ContactUs/ContactUs';
+import CategoryPage from './Components/CategoryPage/CategoryPage';
+import PrivacyPolicy from './Components/PrivacyPolicies/PrivacyPolicy';
 
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom';
 
@@ -12,6 +15,10 @@ const router = createBrowserRouter(
     <Route path='/' element= {<App/>}>
       <Route path='' element={<Home/>}></Route>
       <Route path='product-page/:productId' element={<ProductPage/>}/>
+      <Route path='contact-us' element={<ContactUs/>}/>
+      <Route path='category/:type' element={<CategoryPage/>}/>
+      <Route path='privacy-policies' element={<PrivacyPolicy/>}/>
+
     </Route>
   )
 )

@@ -26,8 +26,8 @@ function Product(props) {
           </div>
 
           <div className={styles.prices}>
-            <div className={styles.cut}>{Number(props.price) + 5}$</div>
-            <div className={styles.actual}>{props.price}$</div>
+            <div className={styles.cut}>{(Number(props.price)+5).toFixed(2)}$</div>
+            <div className={styles.actual}>{Number(props.price).toFixed(2)}$</div>
           </div>
         </div>
 
